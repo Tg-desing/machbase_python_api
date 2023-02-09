@@ -53,7 +53,7 @@ def publish(client, msg, pub_topic):
     count = 0
     while not publish_flag:
         count += 1
-        if (count == 10):
+        if (count == 100):
             print("Waiting for publishing.")
             count = 0
 

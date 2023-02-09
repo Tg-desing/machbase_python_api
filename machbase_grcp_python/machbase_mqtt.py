@@ -1,9 +1,7 @@
 import time
 import json
-import random
 import mqtt
-import datetime
-import sys
+
 
 def CreateMqttJson(f, rows_count):
     rows_list = list()

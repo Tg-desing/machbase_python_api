@@ -1,7 +1,6 @@
 import json
 import requests
 import time
-import os
 
 
 def csv_to_list(file, rowcount :int):
@@ -39,6 +38,5 @@ CSVFILE_NAME = "eqp_mod8.csv"
 URL ="http://127.0.0.1:5654/db/write"
 HEADERS = {'Content-Type': 'application/json; charset=utf-8'}
 
-#data = { "table": "restapi", "data": {"columns": ["name", "time", "value"], "rows": [ ["tag1", 1, 1.11], ["tag1", 2, 2.22]]}}
 data_json = csv_to_json(CSVFILE_NAME, TABLE, 54 * 5000)
 http_post(URL, HEADERS, data_json)
